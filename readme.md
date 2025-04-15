@@ -31,20 +31,59 @@ Ganti `<YOUR_DEPLOYED_URL>` dengan URL deployment Anda.
 
 ### Struktur Respons Sukses (JSON)
 
+## `/api/` dan `/api/random`
 ```json
 {
-  "success": true,
-  "posts": [
+  "meme": {
+    "PostURL": "http://1cak.com/2998617",
+    "Title": "SeFruit Pembicaraan(Vol.1100)",
+    "ImageUrl": "https://1cak.com//posts/17b0e8a6d2e009a0fdfef58675ea836f_t.jpg",
+    "Like": "1284",
+    "Uploader": "bagbamwtwo",
+    "UploadTime": "Thu, 24 Aug 2023 13:45:25 +0700"
+  },
+  "status": "Success"
+}
+```
+## `/api/popular`
+
+```json
+{
+  "memes": [
     {
-      "id": "...", // ID Postingan di 1cak
-      "url": "...", // URL lengkap ke postingan
-      "title": "...", // Judul postingan
-      "imageUrl": "...", // URL gambar postingan
-      "votes": "...", // Jumlah vote (string)
-      "nsfw": false // Boolean, true jika NSFW
+      "PostURL": "test",
+      "Title": "Gelar Tikar Di Air",
+      "ImageUrl": "https://1cak.com/3047786",
+      "Like": "1045",
+      "Uploader": "aribloong",
+      "UploadTime": "Tue, 15 Apr 2025 08:49:19 +0700"
     },
-    // ... post lainnya
-  ]
+    {
+      "PostURL": "test",
+      "Title": "Saya Aslinya Dua Orang",
+      "ImageUrl": "https://1cak.com/3047782",
+      "Like": "1010",
+      "Uploader": "panjias",
+      "UploadTime": "Tue, 15 Apr 2025 08:05:30 +0700"
+    },
+    {
+      "PostURL": "test",
+      "Title": "Ivan Estrada Be Like",
+      "ImageUrl": "https://1cak.com/3047781",
+      "Like": "1091",
+      "Uploader": "panjias",
+      "UploadTime": "Tue, 15 Apr 2025 07:47:50 +0700"
+    },
+    {
+      "PostURL": "test",
+      "Title": "Walau Besi Suramadu Suka Diprintilin, Jembatan Ini Tetep Kokoh Dan Siap Menyediakan Jalannya Bagi Warga Surabaya Maupun Madura Yang Mau Melintas",
+      "ImageUrl": "https://1cak.com/3047780",
+      "Like": "1168",
+      "Uploader": "dewa_kipas",
+      "UploadTime": "Tue, 15 Apr 2025 07:42:31 +0700"
+    }
+  ],
+  "status": "Success"
 }
 ```
 
