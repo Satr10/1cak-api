@@ -22,7 +22,10 @@ func RandomMeme(c *fiber.Ctx) error {
 			"status": "Failed",
 		})
 	}
-	return c.JSON(meme)
+	return c.JSON(fiber.Map{
+		"status": "Success",
+		"meme":   meme,
+	})
 }
 
 func PopularMeme(c *fiber.Ctx) error {
@@ -35,5 +38,8 @@ func PopularMeme(c *fiber.Ctx) error {
 		})
 	}
 
-	return c.JSON(memes)
+	return c.JSON(fiber.Map{
+		"status": "Success",
+		"memes":  memes,
+	})
 }
