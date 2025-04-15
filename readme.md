@@ -6,6 +6,8 @@ API tidak resmi untuk mengambil data postingan dari [1cak.com](https://1cak.com)
 
 Dibangun menggunakan Go (Golang) dan dirancang untuk mudah di-deploy ke platform seperti Vercel.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Satr10/1cak-api)
+
 ## ✨ Fitur
 
 * Mengambil postingan dari 1cak.com
